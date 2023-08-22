@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: #fff;
+}
+#Home
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/ak1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Home .h-txt-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+/* .logo
+{
+    width: 300px;
+    height: 80px;
+    object-fit: cover;
+} */
+.container1
+{
+    padding: 10px 5%;
+}
+ul li a
+{
+    display: flex;
+    list-style: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.btn-outline-danger
+{
+    border-width: 0px;
+    color: white;
+}
+.btn1
+{
+    border-width: 1px;
+    color: white;
+    display: inline block;
+    margin-top: 20px;
+}
+.navbar{
+    position:fixed;
+    height:80px;
+    width:100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    width: 100%;
+    height: 100vh;
+    background-color:#080808;
+    padding: 7% 5%;
+}
+ .btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+.h-txt
+{
+    position: static;
+    margin-top: 20%;
+    font-size: 30px;
+}
+h1
+{
+    position: static;
+}
+.h-txt h1
+{
+    margin-top: 20px;
+    font-size: 60px;
+    padding-left: 30px;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* -------------about-------------- */
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1
+{
+    flex-basis: 35%;
+}
+.about-col-1 img
+{
+    width: 80%;
+    
+    border-radius: 15px;
+}
+.about-col-2
+{
+    flex-basis: 60%;
+}
+.sub-title
+{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.container1 {
+    height: 100vh;
+    display: flex;
+    padding: 50px 5%;
+  }
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s
+}
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+    
+}
+.tab-contents ul li span
+{
+    font-size: 14px;
+    color: #b54769;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab
+{
+    display: block;
+}
+/* -----------Services-------------- */
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    width: 100%;
+}
+.services-list div
+{
+    background: #262626;
+    padding: 40px 40px 0px 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    height: 400px;
+    transition: background 0.5s,transform 0.5s;
+    cursor: pointer;
+}
+.services-list div i
+{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.services-list div a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.services-list div:hover
+{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/* ----portfolio------- */
+#Portfolio .container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .image-ele
+{
+    flex-basis: 40%;
+    max-height: 45%;
+    max-width: 50%;
+}
+img 
+{
+    width: 100%;
+    height: 70%;   
+    object-fit: cover;
+    object-position: 50% 0%;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+}
+img:hover
+{
+    transform: scale(1.03);
+}
+/* -----------BLog---------- */
+.bl-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bl-container .ele
+{
+    flex-basis: 40%;
+}
+
+/* ------------Contact----------- */
+.contact-left
+{
+    flex-basis: 35%;
+}
+.contact-right
+{
+    flex-basis: 60%;
+    width: 20%;
+}
+.contact-left p i
+{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons
+{
+    margin-top: 30px;
+}
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover
+{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    background: #262626;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+form .btn1
+{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* ------------MEDIA----------- */
+@media (max-width:799px)
+{
+    #Home
+    {
+        width: 100%;
+        height: 100vh;
+        background: url(images/ak2.jpg) no-repeat;
+        background-size: 50%;
+        object-fit: fill;
+        background-position: 70%;
+    }
+    .h-txt
+    {
+        position: static;
+        margin-top: 20%;
+        font-size: 15px;
+    }
+    h1
+    {
+        position: static;
+    }
+    .h-txt h1
+    {
+        margin-top: 20%;
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .sub-title
+    {
+        margin-top: -20px;
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2
+    {
+        flex-basis: 100%;
+    }
+    .about-col-1
+    {
+        margin: auto;
+    }
+    .about-col-1 img
+    {
+        width: 100px;
+    }
+    #About .container1 .row .about-col-2 p
+    {
+        font-size: 10px;
+        padding-right: 45px;
+        padding-top: 10px;
+        margin: auto;
+    }
+    .tab-links
+    {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .tab-contents ul li
+    {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    section
+    {
+        margin-bottom: -40px;
+    }
+    .contact-left,.contact-right
+    {
+        flex-basis: 100%;
+    }
+    #Services
+    {
+        height: 250vh;
+    }
+    /* .image-grid-container {
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    #Portfolio
+    {
+        height: 210vh;
+    } */
+}
+@media (max-width:477px)
+{
+    #Home
+    {
+        width: 100%;
+        height: 100vh;
+        background: url(images/ak2.jpg) no-repeat;
+        background-size: 50%;
+        object-fit: fill;
+        background-position: 70%;
+    }
+    .h-txt
+    {
+        position: static;
+        margin-top: 20%;
+        font-size: 15px;
+    }
+    h1
+    {
+        position: static;
+    }
+    .h-txt h1
+    {
+        margin-top: 20%;
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .sub-title
+    {
+        margin-top: -20px;
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2
+    {
+        flex-basis: 100%;
+    }
+    .about-col-1
+    {
+        margin: auto;
+    }
+    .about-col-1 img
+    {
+        width: 100px;
+    }
+    #About .container1 .row .about-col-2 p
+    {
+        font-size: 10px;
+        padding-right: 45px;
+        padding-top: 10px;
+        margin: auto;
+    }
+    .tab-links
+    {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+    .tab-contents ul li
+    {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+    section
+    {
+        margin-bottom: -40px;
+    }
+    .contact-left,.contact-right
+    {
+        flex-basis: 100%;
+    }
+    #Services
+    {
+        height: 170vh;
+    }
+    /* .image-grid-container {
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    #Portfolio
+    {
+        height: 300vh;
+    } */
+}
